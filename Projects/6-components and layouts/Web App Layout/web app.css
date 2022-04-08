@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+    height: 100vh;
+    text-align: center;
+    font-weight: 700;
+
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+}
+
+nav,section,main,aside{
+    padding-top: 24px;
+
+}
+
+nav{
+    background-color: rgb(41, 45, 59);
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    color: rgb(197, 197, 197);
+}
+
+ menu{
+     background-color: rgb(95, 85, 151);
+     grid-column: 2/-1;
+     color: aliceblue;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .btn-container{
+     width: 95%;
+     display: flex;
+     justify-content: flex-start;
+     gap: 24px;
+ }
+
+.btn{
+    display: inline-block;
+     padding: 6px 10px 7px 10px;
+     font-weight: 500;
+     font-size: 16px;
+     cursor: pointer;
+     background-color: rgba(0, 0, 0, 0.151);
+     color: rgb(255, 255, 255);
+     border: none;
+ }
+
+ button:last-child{
+     background-color: rgb(241, 53, 53);
+     margin-left: auto;
+ }
+
+ section{
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    overflow: scroll;
+}
+
+.boxes{
+    background-color: rgb(173, 179, 187);
+    height: 96px;
+    width: 75%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ main{
+     background-color: rgb(250, 250, 250);
+ }
+
+ aside{
+     background-color: rgb(216, 216, 216);
+ }
+
