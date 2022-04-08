@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<style>
+
+.city {
+  background-color: rgb(0, 43, 68);
+  color: rgb(193, 220, 255);
+  border: 3px solid rgb(0, 255, 242);
+  margin: 5px;
+  padding: 10px;
+}
+
+table {
+    border: solid 1px rgb(7, 0, 100);
+  width: 75%;
+}
+
+th, td {
+  padding: 8px;
+  border: solid 1px rgb(210, 236, 248);
+  text-align: center;
+  background-color: rgb(210, 236, 248);
+}
+
+tr:hover td{background: rgb(62, 232, 255);}
+
+#header{
+    color: blueviolet;
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.pads {
+    padding: 5px;
+    text-align: center;
+    text-decoration-style: solid;
+    color: darkorange;
+
+    font-size: x-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rb {
+  border-style: hidden hidden hidden solid;
+  padding: 30px;
+  border-color: rgb(63, 47, 13);
+  width: 80%;
+  color: rgb(53, 37, 14);
+  font-variant: small-caps;
+  font-style: oblique;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(230, 216, 187);
+}
+
+</style>
+</head>
+<body style="background-color: rgba(230, 230, 230, 0.911);">
+
+<h2 id="header">Hoverable Table</h2>
+<button type="button" onclick="func()">Style The Above Heading</button>
+<p class="pads">Move the mouse over the table rows to see the effect.</p>
+
+<script>
+  function func(){
+    document.getElementById("header").style.fontSize="30px";
+    document.getElementById("header").style.color="blue";
+    document.getElementById("header").style.backgroundColor="black";
+  }
+</script>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<div style="background-color: greenyellow; color: black; padding: 10px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+
+<div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+    </div> 
+    
+    <div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+    </div>
+    
+    <div class="city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    </div>
+<hr>
+
+<p class="rb">
+    This is some text inside a border ---------------------------->
+</p>
+
+<svg height="100" width="1500" >
+  <polyline points="0,20 1500,20"
+  style="fill:none;stroke:black;stroke-width:3" />
+</svg> 
+
+<iframe width="30%" height="300" src="https://www.youtube.com/embed/qt4bR45dfO8">
+</iframe>
+
+
+</body>
+</html>
